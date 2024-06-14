@@ -48,33 +48,39 @@ def update_sheet(username, question_num, answer):
 
 # プルダウンメニューの選択肢を作成
 options = [
-    "1: あなたのプロンプト",
-    "1: ChatGPTの回答",
-    "2: あなたのプロンプト",
-    "2: ChatGPTの回答",
-    "3: あなたのプロンプト",
-    "3: ChatGPTの回答",
-    "4: あなたのプロンプト",
-    "4: ChatGPTの回答",
-    "5: あなたのプロンプト",
-    "5: ChatGPTの回答",
-    "6: あなたのプロンプト",
-    "6: ChatGPTの回答",
-    "7: あなたのプロンプト",
-    "7: ChatGPTの回答",
-    "8: あなたのプロンプト",
-    "8: ChatGPTの回答",
-    "9: あなたのプロンプト",
-    "9: ChatGPTの回答",
-    "10: あなたのプロンプト",
-    "10: ChatGPTの回答"
+    "ワーク2-1 プロンプト",
+    "ワーク2-1 ChatGPTの回答",
+    "ワーク2-2 プロンプト",
+    "ワーク2-2 ChatGPTの回答",
+    "ワーク2-3 プロンプト",
+    "ワーク2-3 ChatGPTの回答",
+    "ワーク2-4 プロンプト",
+    "ワーク2-4 ChatGPTの回答",
+    "ワーク4-1 プロンプト",
+    "ワーク4-1 ChatGPTの回答",
+    "ワーク5-1 プロンプト",
+    "ワーク5-1 ChatGPTの回答",
+    "ワーク5-2 プロンプト",
+    "ワーク5-2 ChatGPTの回答",
+    "ワーク6-1 プロンプト",
+    "ワーク6-1 ChatGPTの回答",
+    "ワーク6-2 プロンプト",
+    "ワーク6-2 ChatGPTの回答",
+    "ワーク6-3 プロンプト",
+    "ワーク6-3 ChatGPTの回答",
+    "ワーク6-4 プロンプト",
+    "ワーク6-4 ChatGPTの回答",
+    "ワーク6-5 プロンプト",
+    "ワーク6-5 ChatGPTの回答",
+    "ワーク6-6 プロンプト",
+    "ワーク6-6 ChatGPTの回答"
 ]
 
 # Streamlit UI
 with st.form("user_input"):
     username = st.text_input("ユーザー名")
     question_num = st.selectbox("質問番号", options)
-    answer = st.text_area("回答")
+    answer = st.text_area("回答", height=300)
     submitted = st.form_submit_button("送信")
 
 if submitted:
